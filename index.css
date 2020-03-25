@@ -1,0 +1,80 @@
+  /* 这个是css 的注释，使用方法和html 一样，ctrl + / */
+  /* *是一个通配符，意思就是匹配所有的元素 */
+  /* 因为浏览器窗口会默认设置外边距和内边距，我们来吧这两个属性都设置为 0 */
+  /* px 像素，宽度单位， 值为0 可以不用带单位 */
+  /* 以下所有说的查文档，都代表查阅W3School，必须要掌握自己查阅文档的能力 */
+  *{
+    /* 外边距 */
+    margin: 0;
+    /* 内边距 */
+    padding: 0;
+  }
+
+  /* 使用#header 来匹配id 为header 的元素 */
+  /* 这种查找方式叫css 的选择器 */
+  #header{
+    /* 宽 */
+    width: 100%;
+    /* 高 */
+    height: 30px;
+    /* 边框 */
+    /* border 默认上下左右边框 */
+    /* border-top, border-bottom, border-left, border-right 分别是四个方向的边框*/
+    /* solid 是实现，1px 是边框宽度，black 是边框颜色 */
+    /* 可以查阅文档了解border 的所有属性 */
+    border-bottom: solid 1px black;
+  }
+
+  /* 使用.info 来匹配所有class 名为info 的元素 */
+  /* 所有类名叫做 info 的元素都是匹配到，所以这样写的样式都会生效 */
+  .info{
+    /* 浮动 left right 分别向左右浮动 */
+    float: left;
+    /* 外边距四个方向的定义就和border 一样，可以分别定义 margin-left，margin-right 等*/
+    /* 也可以不使用方向来定义，通过赋值也可以 */
+    /* margin: 10px 代表上下左右外边距都是10px */
+    /* margin: 1px 2px 3px 4px 自左向右分别标识上、右、下、左四个方向的外边距 */
+    /* margin 也可以写三个值，具体的查文档 */
+    margin-left: 10px;
+  }
+
+  .setting{
+    float: right;
+    margin-right: 10px;
+  }
+
+  /* 多个元素他们定义一样的样式，就可以这样子用逗号隔开，分别写多个类名或者 id，都行 */
+  .info, .setting{
+    height: 30px;
+    /* line-height行高，只有一行的内容时，行高设置为和高度一致，那么内容会垂直居中 */
+    line-height: 30px;
+  }
+
+  .logo{
+    /* 文字水平居中 还有 left right 属性，就是字面意思，居左居右 */
+    text-align: center;
+  }
+
+  .input_area{
+    text-align: center;
+  }
+
+  .footer{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    border-top: solid 1px black;
+    /* position 定位 */
+    /* position 常见的使用的值有relative, absolute, fixed*/
+    /* relative, absolute 一般会结合使用 后面用到再细说*/
+    /* absolute 和 fixed 都会脱离文本流 */
+    /* 文本流的意思就是，本来页面是一个像俄罗斯方块一样的堆叠起来的，就是一个二维空间 */
+    /* 而脱离文本流就是收会脱离html节点的堆叠，会悬浮起来，变成了一个三维空间 */
+    /* 脱离文本里有什么影响，就是不再占用原有占用的空间，就像俄罗斯方块中间抽调一层，那么上面的就会掉下来 */
+    /* 这里使用的fixed 就是悬浮在某个位置 */
+    /* left 和 bottom 就是相对于窗口的左边和底部的位置，一般设置两个方向就可以了 */
+    /*  */
+    position: fixed;
+    left: 0;
+    bottom: 0;
+  }

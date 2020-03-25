@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+  <!-- 这是一段注释，ctrl + ? 就可以了 -->
+  <!-- 注释就是解释说id明的东西，不会被网页编译出来，仅仅用于解释说明，有助于后期维护 -->
+  <!-- 页面顶部 -->
+  <div id="header">
+    <!-- id 是 html元素的一个属性 -->
+    <!-- id 值必须唯一，我这里定义了id 为 header，那么其他元素定义id 就不可以使用 header了 -->
+    
+    <!-- css 和 js 可以通过这个类名来查找这个元素 -->
+    <!-- 类名意思尽量和内容相近，比如我这是头部信息，我可以叫做header-->
+    <div class="info">
+      <!-- class 也是是元素的属性，定义了元素的类名-->
+      <!-- class 叫做类名，就是一类的东西，比如人类和动物，是两个类 -->
+      <!-- 可以在多个元素上定义相同的类名 -->
+      <!-- html的标签可以不限制层级的嵌套 -->
+      成都
+    </div>
+    <div class="setting">
+      设置
+    </div>
+  </div>
+
+  <!-- 页面主体内容 -->
+  <div class="main_content">
+    <!-- logo -->
+    <div class="logo">
+      <img src="https://www.baidu.com/img/bd_logo1.png?where=super" alt="logo加载失败">
+      <!-- img 是图片标签 src和 alt是属性 -->
+      <!-- src 是图片地址的属性 -->
+      <!-- alt 图片加载失败之后的提示文字 -->
+    </div>
+
+    <!-- 输入框 -->
+    <div class="input_area">
+      <input type="text">
+      <input type="button" value="百度一下">
+      <!-- input 是输入标签 type 和value 都是input 标签的属性 -->
+      <!-- type 定义输入标签的类型 text 就是文字， button就是按钮 -->
+    </div>
+  </div>
+
+  <!-- 页面底部 -->
+  <div class="footer">
+    底部通常会声明一些版权，备案号之类的网站信息
+  </div>
+</body>
+</html>
